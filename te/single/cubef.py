@@ -17,7 +17,9 @@ tello.move_left(50)
 tello.move_back(50)
 tello.move_right(50)
 tello.move_down(50)
-tello.land()   
+tello.land()
+y=str(tello.query_battery())
+print("你的電量是"+y)   
 
     
 

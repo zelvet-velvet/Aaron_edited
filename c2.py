@@ -1,19 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May 12 15:40:47 2022
-
-@author: 123456
-"""
-
-import os
 import socket , threading
 HOST="127.0.0.1"
 PORT = 12345
 
-
-
-def cls():
-    	os.system('clear')
             
 def listen():
 	global sent
@@ -35,7 +23,6 @@ def get_input():
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
-	cls()
 
 	s.connect((HOST, PORT))
 	sent = b""
